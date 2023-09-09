@@ -1,0 +1,142 @@
+body
+{
+    background-color: antiquewhite;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+
+nav
+{
+    height: 63px;
+    background-color: black;
+}
+
+ul{
+    display: flex;
+    color:white;
+    list-style: none;
+    align-items: center;
+    /* justify-content: center; */
+    height:63px;
+    gap:20px;
+}
+
+ul li:hover
+{
+    color:black;
+    background-color: beige;
+    border-radius: 30px;
+    padding: 13px;
+    margin: 3px;
+}
+
+
+.brand img{
+    width:34px;
+    height:34px;
+    margin:0 13px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.container
+{
+    min-height: 70vh;
+    background-color: black;
+    width:70%;
+    color:white;
+    margin:23px auto;
+    /* display: flex; */
+    border-radius: 17px;
+    padding:12px;
+    background : url('../img/bg.webp') no-repeat center center/cover;
+}
+
+
+.bottom
+{
+    position:sticky;
+    bottom:10px;
+    background-color: black;
+    color:white;
+    display: block;
+    width:100%;
+    height:115px;
+    display: flex;
+    flex-direction: column;/*so that play icons come below the range*/
+    align-items: center;
+    justify-content: center;
+}
+
+
+ .bottom input{
+    width:80%;
+ }
+
+
+ .bottom .icons
+ {
+    margin-top:12px;
+    cursor: pointer;
+
+ }
+
+
+ .songitem
+ {
+    padding:15px;
+    margin:12px 0px;
+    background-color: white;
+    color: black;
+    height:34px;
+    width:50%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius:25px;
+ }
+
+ .timestamp{
+    margin:0 12px;
+ }
+
+
+ .timestamp i{
+    margin:0 12px;
+    cursor: pointer;
+ }
+
+ .songinfo img{
+    height: 108px;
+    width: 150px;
+    position:absolute;
+    left:180px;
+    bottom: 6px;
+    z-index: -1;
+    opacity:0;
+    transition: opacity 0.4 ease-in;
+ }
+
+ #songnamemaster
+ {
+    position:absolute;
+    left:350px;
+    bottom:51px;
+    font-size: 1rem;
+ }
+
+
+ .songName{
+    font-size: 1.2rem;
+    text-shadow: 1px 1px red;
+ }
